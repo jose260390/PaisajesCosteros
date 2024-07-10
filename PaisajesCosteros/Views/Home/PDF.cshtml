@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PaisajesCosteros.Models.PDF>
+
+@{
+    ViewData["Title"] = "PDF";
+    Layout = "~/Views/Shared/_LayoutPages.cshtml";
+}
+<!-- About Generic Start -->
+<div class="main-wrapper">
+    <!-- Start feature Area -->
+    <section class="feature-area section-gap" id="secvice">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-60 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Some Features that Made us Unique</h1>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="single-feature mb-30">
+                            <div class="title d-flex flex-row pb-20">
+                                <span class="lnr lnr-file-empty"></span>
+                                <h4><a href="@item.pdf_ruta" target="_blank">@item.pdf_nombre</a></h4>
+                            </div>
+                            <p>
+                                @item.pdf_descripcion
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!-- End feature Area -->
+</div>
