@@ -192,6 +192,8 @@
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\Linearicons-Free.svg" />
     <Content Include="Content\img\about-img.jpg" />
+    <Content Include="Content\img\Antofa1.jpg" />
+    <Content Include="Content\img\Antofa2.jpg" />
     <Content Include="Content\img\elements\d.jpg" />
     <Content Include="Content\img\elements\disabled-check.png" />
     <Content Include="Content\img\elements\disabled-radio.png" />
@@ -221,12 +223,22 @@
     <Content Include="Content\img\g4.jpg" />
     <Content Include="Content\img\g5.jpg" />
     <Content Include="Content\img\g6.jpg" />
+    <Content Include="Content\img\GaleriaPrincipal\Antofagasta.jpg" />
+    <Content Include="Content\img\GaleriaPrincipal\Mejillones.jpg" />
+    <Content Include="Content\img\GaleriaPrincipal\Taltal.jpg" />
+    <Content Include="Content\img\GaleriaPrincipal\Tocopilla.jpg" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\Meji1.JPG" />
+    <Content Include="Content\img\Meji2.JPG" />
     <Content Include="Content\img\pdf-3385.svg" />
     <Content Include="Content\img\play-btn.png" />
     <Content Include="Content\img\slider1.jpg" />
     <Content Include="Content\img\slider2.jpg" />
     <Content Include="Content\img\slider3.jpg" />
+    <Content Include="Content\img\Tal1.JPG" />
+    <Content Include="Content\img\Tal2.jpg" />
+    <Content Include="Content\img\Toc1.JPG" />
+    <Content Include="Content\img\Toc2.jpg" />
     <Content Include="Content\img\video-bg.jpg" />
     <Content Include="Content\img\why.jpg" />
     <Content Include="Content\js\jquery.ajaxchimp.min.js" />
@@ -463,7 +475,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\img\GaleriaPrincipal\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
