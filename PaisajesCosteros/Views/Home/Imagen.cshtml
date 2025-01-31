@@ -3,166 +3,70 @@
 }
 
 <div class="whole-wrap">
-	<div class="container text-center">
-		<h1 class="gallery-title">Selecciona una Galería</h1>
-		<div class="row justify-content-center">
-			<!-- Fila 1 -->
-			<div class="col-md-6 mb-5">
-				<a href="/Galeria/Antofagasta" class="gallery-link">
-					<div class="circle-image">
-						<img src="../Content/img/Antofa1.JPG" alt="Antofagasta">
+		<div class="container">
+			<h1 class="gallery-title">Galería de Imágenes</h1>
+			<div class="row">
+				@foreach (var item in Model)
+				{
+					<div class="col-md-6 mb-4 d-flex align-items-stretch">
+						<div class="card">
+							<a href="@item.imagen_ruta" class="img-pop-up">
+								<img src="@item.imagen_ruta" alt="@item.imagen_nombre" class="card-img-top img-hover">
+							</a>
+							<div class="card-body">
+								<h5 class="card-title">@item.imagen_nombre</h5>
+								<p class="card-text">@item.imagen_descripcion</p>
+							</div>
+						</div>
 					</div>
-					<h3 class="location-title">Antofagasta</h3>
-				</a>
-			</div>
-
-			<div class="col-md-6 mb-5">
-				<a href="/Galeria/Taltal" class="gallery-link">
-					<div class="circle-image">
-						<img src="../Content/img/Tal1.JPG" alt="Taltal">
-					</div>
-					<h3 class="location-title">Taltal</h3>
-				</a>
-			</div>
-		</div>
-
-		<div class="row justify-content-center">
-			<!-- Fila 2 -->
-			<div class="col-md-6 mb-5">
-				<a href="/Galeria/Tocopilla" class="gallery-link">
-					<div class="circle-image">
-						<img src="../Content/img/Toc1.JPG" alt="Tocopilla">
-					</div>
-					<h3 class="location-title">Tocopilla</h3>
-				</a>
-			</div>
-
-			<div class="col-md-6 mb-5">
-				<a href="/Galeria/Mejillones" class="gallery-link">
-					<div class="circle-image">
-						<img src="../Content/img/Meji1.JPG" alt="Mejillones">
-					</div>
-					<h3 class="location-title">Mejillones</h3>
-				</a>
+				}
 			</div>
 		</div>
 	</div>
-</div>
 
-<style>
-	.gallery-title {
-		font-size: 3.2rem;
-		text-align: center;
-		margin-bottom: 50px;
-		font-weight: bold;
-		color: #333;
-	}
-
-	.circle-image {
-		width: 350px;
-		height: 350px;
-		border-radius: 50%;
-		overflow: hidden;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-		margin: 0 auto;
-		transition: transform 0.4s ease;
-	}
-
-		.circle-image img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+	<style>
+		.gallery-title {
+			font-size: 2.8rem;
+			text-align: center;
+			margin-bottom: 50px;
+			font-weight: bold;
+			color: #333;
 		}
 
-		.circle-image:hover {
+		/* Diseño de tarjetas */
+		.card {
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			height: 100%;
+		}
+
+		/* Ajustar imagen para mayor tamaño */
+		.card-img-top {
+			width: 100%;
+			height: 350px;
+			object-fit: cover;
+			transition: transform 0.4s ease;
+		}
+
+		/* Efecto de hover en imágenes */
+		.img-hover:hover {
 			transform: scale(1.1);
 		}
 
-	.location-title {
-		font-size: 2rem;
-		font-weight: bold;
-		margin-top: 15px;
-		color: #555;
-	}
-
-	.gallery-link {
-		text-decoration: none;
-		color: inherit;
-	}
-
-		.gallery-link:hover {
-			text-decoration: none;
+		.card-body {
+			padding: 25px;
 		}
-</style>
 
+		.card-title {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
 
-
-@*<div class="whole-wrap">
-	<div class="container">
-		<h1 class="gallery-title">Galería de Imágenes</h1>
-		<div class="row">
-			@foreach (var item in Model)
-			{
-				<div class="col-md-6 mb-4 d-flex align-items-stretch">
-					<div class="card">
-						<a href="@item.imagen_ruta" class="img-pop-up">
-							<img src="@item.imagen_ruta" alt="@item.imagen_nombre" class="card-img-top img-hover">
-						</a>
-						<div class="card-body">
-							<h5 class="card-title">@item.imagen_nombre</h5>
-							<p class="card-text">@item.imagen_descripcion</p>
-						</div>
-					</div>
-				</div>
-			}
-		</div>
-	</div>
-</div>
-
-<style>
-	.gallery-title {
-		font-size: 2.8rem;
-		text-align: center;
-		margin-bottom: 50px;
-		font-weight: bold;
-		color: #333;
-	}
-
-	/* Diseño de tarjetas */
-	.card {
-		border: none;
-		border-radius: 15px;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-		overflow: hidden;
-		height: 100%;
-	}
-
-	/* Ajustar imagen para mayor tamaño */
-	.card-img-top {
-		width: 100%;
-		height: 350px;
-		object-fit: cover;
-		transition: transform 0.4s ease;
-	}
-
-	/* Efecto de hover en imágenes */
-	.img-hover:hover {
-		transform: scale(1.1);
-	}
-
-	.card-body {
-		padding: 25px;
-	}
-
-	.card-title {
-		font-size: 1.5rem;
-		font-weight: bold;
-		margin-bottom: 15px;
-	}
-
-	.card-text {
-		font-size: 1.1rem;
-		color: #555;
-	}
-</style>*@
-
+		.card-text {
+			font-size: 1.1rem;
+			color: #555;
+		}
+	</style>

@@ -16,11 +16,13 @@ namespace PaisajesCosteros.Controllers
             return View();
 		}
 
-		public ActionResult Imagen()
+		[HttpPost]
+		public ActionResult Imagen(string nombreCiudad)
 		{
 			try
 			{
-				return View(_db.Imagen.ToList());
+				IEnumerable<Imagen> listaImagen = _db.Imagen.Where(l => l.imagen_nombre == nombreCiudad);
+                return View(listaImagen);
 			}
 			catch (Exception ex)
 			{
@@ -28,7 +30,12 @@ namespace PaisajesCosteros.Controllers
 			}
 		}
 
-		public ActionResult PDF()
+		public ActionResult GalleryImage()
+        {
+			return View();
+        }
+
+        public ActionResult PDF()
 		{
 			try
 			{

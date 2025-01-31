@@ -1,0 +1,125 @@
+﻿@{
+	Layout = "~/Views/Shared/_LayoutPages.cshtml";
+}
+
+<div class="whole-wrap">
+	<div class="container text-center">
+		<h1 class="gallery-title">Selecciona una Galería</h1>
+		<div class="row justify-content-center">
+			<div class="col-md-6 mb-5">
+				<form action="@Url.Action("Imagen", "Home")" method="post">
+					<div class="circle-image" style="cursor: pointer;" onclick="this.closest('form').submit();">
+						<img src="../Content/img/GaleriaPrincipal/Antofagasta.jpg" alt="Antofagasta">
+						<input type="hidden" name="nombreCiudad" value="Antofagasta" />
+					</div>
+					<h3 class="location-title">Antofagasta</h3>
+				</form>
+			</div>
+
+			<div class="col-md-6 mb-5">
+				<form action="@Url.Action("Imagen", "Home")" method="post">
+					<div class="circle-image" style="cursor: pointer;" onclick="this.closest('form').submit();">
+						<img src="../Content/img/GaleriaPrincipal/Taltal.jpg" alt="Taltal">
+						<input type="hidden" name="nombreCiudad" value="Taltal" />
+					</div>
+					<h3 class="location-title">Taltal</h3>
+				</form>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-md-6 mb-5">
+				<form action="@Url.Action("Imagen", "Home")" method="post">
+					<div class="circle-image" style="cursor: pointer;" onclick="this.closest('form').submit();">
+						<img src="../Content/img/GaleriaPrincipal/Tocopilla.jpg" alt="Tocopilla">
+						<input type="hidden" name="nombreCiudad" value="Tocopilla" />
+					</div>	
+					<h3 class="location-title">Tocopilla</h3>
+				</form>
+			</div>
+
+			<div class="col-md-6 mb-5">
+				<form action="@Url.Action("Imagen", "Home")" method="post">
+					<div class="circle-image" style="cursor: pointer;" onclick="this.closest('form').submit();">
+						<img src="../Content/img/GaleriaPrincipal/Mejillones.jpg" alt="Mejillones">
+						<input type="hidden" name="nombreCiudad" value="Mejillones" />
+					</div>
+					<h3 class="location-title">Mejillones</h3>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+@*<div class="whole-wrap">
+	<div class="container">
+		<h1 class="gallery-title">Galería de Imágenes</h1>
+		<div class="row">
+			@foreach (var item in Model)
+			{
+				<div class="col-md-6 mb-4 d-flex align-items-stretch">
+					<div class="card">
+						<a href="@item.imagen_ruta" class="img-pop-up">
+							<img src="@item.imagen_ruta" alt="@item.imagen_nombre" class="card-img-top img-hover">
+						</a>
+						<div class="card-body">
+							<h5 class="card-title">@item.imagen_nombre</h5>
+							<p class="card-text">@item.imagen_descripcion</p>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>
+
+<style>
+	.gallery-title {
+		font-size: 2.8rem;
+		text-align: center;
+		margin-bottom: 50px;
+		font-weight: bold;
+		color: #333;
+	}
+
+	/* Diseño de tarjetas */
+	.card {
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		height: 100%;
+	}
+
+	/* Ajustar imagen para mayor tamaño */
+	.card-img-top {
+		width: 100%;
+		height: 350px;
+		object-fit: cover;
+		transition: transform 0.4s ease;
+	}
+
+	/* Efecto de hover en imágenes */
+	.img-hover:hover {
+		transform: scale(1.1);
+	}
+
+	.card-body {
+		padding: 25px;
+	}
+
+	.card-title {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	.card-text {
+		font-size: 1.1rem;
+		color: #555;
+	}
+</style>*@
+

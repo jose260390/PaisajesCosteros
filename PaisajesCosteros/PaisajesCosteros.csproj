@@ -180,6 +180,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\Gallery.css" />
     <Content Include="Content\css\jquery.DonutWidget.min.css" />
     <Content Include="Content\css\jquerysctipttop.css" />
     <Content Include="Content\css\linearicons.css" />
@@ -456,11 +457,13 @@
     <Content Include="Views\Home\Video.cshtml" />
     <Content Include="Views\Home\PDF.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Imagen.cshtml" />
+    <Content Include="Views\Home\GalleryImage.cshtml" />
     <Content Include="Views\Shared\_LayoutPages.cshtml" />
+    <Content Include="Views\Home\Imagen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\img\GaleriaPrincipal\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
