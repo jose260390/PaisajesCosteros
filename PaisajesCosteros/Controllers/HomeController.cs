@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,20 +19,21 @@ namespace PaisajesCosteros.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult Imagen(string nombreCiudad)
-		{
-			try
-			{
-				IEnumerable<Imagen> listaImagen = _db.Imagen.Where(l => l.imagen_nombre == nombreCiudad);
+        public ActionResult Imagen(string nombreCiudad)
+        {
+            try
+            {
+                List<Imagen> listaImagen =	_db.Imagen.Where(l => l.imagen_nombre == nombreCiudad).ToList();
                 return View(listaImagen);
-			}
-			catch (Exception ex)
-			{
-				return View(_db.Imagen.ToList());
-			}
-		}
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Ocurrió un error al obtener las imágenes. Detalle: " + ex.Message);
+                return View(new List<Imagen>()); // Retorna una lista vacía en caso de error
+            }
+        }
 
-		public ActionResult GalleryImage()
+        public ActionResult GalleryImage()
         {
 			return View();
         }
