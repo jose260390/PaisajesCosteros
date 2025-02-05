@@ -205,6 +205,7 @@
     <Content Include="Content\img\CarruselHeader\Meji.JPG" />
     <Content Include="Content\img\CarruselHeader\Tal.JPG" />
     <Content Include="Content\img\CarruselHeader\Toco.jpg" />
+    <Content Include="Content\img\cerro.JPG" />
     <Content Include="Content\img\g4.jpg" />
     <Content Include="Content\img\GaleriaPrincipal\Antofagasta.jpg" />
     <Content Include="Content\img\GaleriaPrincipal\Mejillones.jpg" />
@@ -250,6 +251,7 @@
     <Content Include="Content\img\Tocopilla\Toc7.jpg" />
     <Content Include="Content\img\Tocopilla\Toc8.jpg" />
     <Content Include="Content\img\Tocopilla\Toc9.JPG" />
+    <Content Include="Content\img\whatsapp.png" />
     <Content Include="Content\js\jquery.ajaxchimp.min.js" />
     <Content Include="Content\js\jquery.counterup.min.js" />
     <Content Include="Content\js\jquery.magnific-popup.min.js" />
