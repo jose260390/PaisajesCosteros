@@ -17,7 +17,7 @@
 				<div class="col-md-6 mb-4 d-flex align-items-stretch">
 					<div class="card">
 						<a href="@item.imagen_ruta" class="img-pop-up">
-							<img src="@item.imagen_ruta" alt="@item.imagen_nombre" class="card-img-top img-hover">
+							<img loading="lazy" src="@item.imagen_ruta?v=@DateTime.UtcNow.Ticks" alt="@item.imagen_nombre" class="card-img-top img-hover">
 						</a>
 					</div>
 				</div>

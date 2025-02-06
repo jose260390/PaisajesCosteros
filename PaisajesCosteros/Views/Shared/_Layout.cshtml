@@ -3,8 +3,6 @@
 <head>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="~/Content/img/fav.png">
     <!-- Author Meta -->
     <meta name="author" content="colorlib">
     <!-- Meta Description -->
@@ -34,7 +32,7 @@
 			<nav class="navbar navbar-expand-lg  navbar-light">
 				<div class="container">
 					<a class="navbar-brand" href="@Url.Action("Index", "Home")">
-						<img src="~/Content/img/logo.png" alt="">
+						<img loading="lazy" src="~/Content/img/logo.png?v=@DateTime.UtcNow.Ticks" alt="">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="text-white lnr lnr-menu"></span>
@@ -128,7 +126,7 @@
 	<!-- End footer Area -->
 	<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
 		<a href="https://wa.me/56961433854" target="_blank">
-			<img src="../Content/img/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+			<img loading="lazy" src="../Content/img/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
 		</a>
 	</div>
 
