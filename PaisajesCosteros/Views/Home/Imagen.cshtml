@@ -1,7 +1,10 @@
 ﻿@model List<PaisajesCosteros.Models.Imagen>
 @{
 	Layout = "~/Views/Shared/_LayoutPages.cshtml";
+	string nombreCiudad = ViewBag.NombreCiudad ?? "";
 }
+
+<input type="hidden" id="nombreCiudad" value="@ViewBag.NombreCiudad" />
 
 <div class="whole-wrap">
 	<div class="container">
@@ -10,18 +13,14 @@
 			{
 				<span>@Model.First().imagen_nombre</span>
 			}
-		</h1>
-		<div class="row">
-			@foreach (var item in Model)
+			else
 			{
-				<div class="col-md-6 mb-4 d-flex align-items-stretch">
-					<div class="card">
-						<a href="@item.imagen_ruta" class="img-pop-up">
-							<img loading="lazy" src="@item.imagen_ruta?v=@DateTime.UtcNow.Ticks" alt="@item.imagen_nombre" class="card-img-top img-hover">
-						</a>
-					</div>
-				</div>
+				<span>No hay imágenes disponibles</span>
 			}
+		</h1>
+
+		<div id="imagenesContainer">
+			@Html.Partial("_ImagenesPaginadas", Model)
 		</div>
 	</div>
 </div>

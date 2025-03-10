@@ -1,0 +1,51 @@
+﻿@model List<PaisajesCosteros.Models.Imagen>
+
+<div id="imagenesContainer">
+	<div class="row justify-content-center">
+		@for (int i = 0; i < Model.Count; i++)
+		{
+			var item = Model[i];
+			var isLastItem = (i == Model.Count - 1) && (Model.Count % 2 == 1); // Si es la última imagen y el total es impar
+
+			<div class="col-md-6 mb-4 d-flex align-items-stretch @(isLastItem ? "last-image" : "")">
+				<div class="card">
+					<a href="@item.imagen_ruta" class="img-pop-up">
+						<img loading="lazy" src="@item.imagen_ruta?v=@DateTime.UtcNow.Ticks" alt="@item.imagen_nombre" class="card-img-top img-hover">
+					</a>
+				</div>
+			</div>
+		}
+	</div>
+
+	<!-- Paginador con AJAX -->
+	<nav aria-label="Page navigation">
+		<ul class="pagination justify-content-center">
+			@if (ViewBag.CurrentPage > 1)
+			{
+				<li class="page-item">
+					<a class="page-link page-link-ajax" data-page="1" href="#">Primera</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link page-link-ajax" data-page="@(ViewBag.CurrentPage - 1)" href="#">Anterior</a>
+				</li>
+			}
+
+			@for (int i = 1; i <= ViewBag.TotalPages; i++)
+			{
+				<li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+					<a class="page-link page-link-ajax" data-page="@i" href="#">@i</a>
+				</li>
+			}
+
+			@if (ViewBag.CurrentPage < ViewBag.TotalPages)
+			{
+				<li class="page-item">
+					<a class="page-link page-link-ajax" data-page="@(ViewBag.CurrentPage + 1)" href="#">Siguiente</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link page-link-ajax" data-page="@ViewBag.TotalPages" href="#">Última</a>
+				</li>
+			}
+		</ul>
+	</nav>
+</div>
