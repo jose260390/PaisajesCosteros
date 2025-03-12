@@ -17,7 +17,7 @@ namespace PaisajesCosteros.Controllers
 
 
 
-        public ActionResult Imagen(string nombreCiudad, int page = 1, int pageSize = 5)
+        public ActionResult Imagen(string nombreCiudad, int page = 1, int pageSize = 10)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace PaisajesCosteros.Controllers
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"❌ Error en la acción Imagen: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Error en la acción Imagen: {ex.Message}");
 
                 if (Request.IsAjaxRequest())
                 {
