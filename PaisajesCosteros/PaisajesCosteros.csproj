@@ -440,7 +440,6 @@
     <Content Include="Content\lib\bootstrap\LICENSE" />
     <Content Include="Content\lib\jquery-validation\LICENSE.md" />
     <Content Include="Content\lib\jquery\dist\jquery.min.map" />
-    <Content Include="Content\pdf\test.pdf" />
     <Content Include="Content\scss\.DS_Store" />
     <Content Include="Content\scss\bootstrap.scss" />
     <Content Include="Content\scss\bootstrap\.DS_Store" />
@@ -566,6 +565,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\pdf\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

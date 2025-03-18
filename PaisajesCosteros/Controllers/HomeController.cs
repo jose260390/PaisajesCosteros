@@ -84,7 +84,10 @@ namespace PaisajesCosteros.Controllers
             }
             catch (Exception ex)
             {
-                return View(_db.Imagen.ToList());
+                System.Diagnostics.Debug.WriteLine($"Error en la acción documentos: {ex.Message}");
+
+                ModelState.AddModelError("", "Ocurrió un error al obtener los documentos. Inténtelo de nuevo más tarde.");
+                return View(new List<Imagen>());
             }
         }
 
