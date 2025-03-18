@@ -536,6 +536,11 @@
     <Content Include="Content\pdf\MarcoTeorico.pdf" />
     <Content Include="Content\pdf\PlanoCaleta.pdf" />
     <Content Include="Content\pdf\ResultadoPropuesta.pdf" />
+    <Content Include="Content\pdf\ResultadoProyecto.pdf" />
+    <Content Include="Content\pdf\RutaAntofagasta.pdf" />
+    <Content Include="Content\pdf\RutaAntofagasta2.pdf" />
+    <Content Include="Content\pdf\RutaAntofagasta3.pdf" />
+    <Content Include="Content\pdf\RutaAntofagasta4.pdf" />
     <None Include="Properties\PublishProfiles\paisajescosteros.cl - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
