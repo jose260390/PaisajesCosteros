@@ -531,6 +531,11 @@
     <Content Include="Content\scss\theme\_reset.scss" />
     <Content Include="Content\scss\theme\_variables.scss" />
     <Content Include="Content\img\.DS_Store" />
+    <Content Include="Content\pdf\LocalidadCaletaBuena.pdf" />
+    <Content Include="Content\pdf\LocalidadIndigena.pdf" />
+    <Content Include="Content\pdf\MarcoTeorico.pdf" />
+    <Content Include="Content\pdf\PlanoCaleta.pdf" />
+    <Content Include="Content\pdf\ResultadoPropuesta.pdf" />
     <None Include="Properties\PublishProfiles\paisajescosteros.cl - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
@@ -565,7 +570,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\pdf\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
