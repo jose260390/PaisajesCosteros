@@ -188,6 +188,7 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\nice-select.css" />
     <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\principal.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\Linearicons-Free.svg" />
