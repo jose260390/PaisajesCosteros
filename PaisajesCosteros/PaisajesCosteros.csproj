@@ -192,6 +192,7 @@
     <Content Include="Content\css\site.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\Linearicons-Free.svg" />
+    <Content Include="Content\img\agradecimiento.jpg" />
     <Content Include="Content\img\Antofagasta\Antofa1.jpg" />
     <Content Include="Content\img\Antofagasta\Antofa10.jpg" />
     <Content Include="Content\img\Antofagasta\Antofa11.jpg" />
@@ -266,7 +267,6 @@
     <Content Include="Content\img\Mejillones\Meji9.jpg" />
     <Content Include="Content\img\Mejillones\Meji20.jpg" />
     <Content Include="Content\img\paposo.jpg" />
-    <Content Include="Content\img\pdf-3385.svg" />
     <Content Include="Content\img\ruinas.jpg" />
     <Content Include="Content\img\taltal1.jpg" />
     <Content Include="Content\img\taltal2.jpg" />
