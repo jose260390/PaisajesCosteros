@@ -99,11 +99,15 @@
 	</footer>
 	<!-- End footer Area -->
 
+
+
+
 	<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-		<a href="https://wa.me/56961433854" target="_blank">
-			<img loading="lazy" src="../Content/img/whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+		<a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
 		</a>
 	</div>
+
 
 	<script src="~/Content/js/vendor/jquery-2.2.4.min.js"></script>
 
@@ -118,5 +122,18 @@
 	<script src="~/Content/js/jquery.magnific-popup.min.js"></script>
 	<script src="~/Content/js/waypoints.min.js"></script>
 	<script src="~/Content/js/main.js"></script>
+
+
+	<script>
+		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		const link = document.getElementById('whatsapp-link');
+		const phoneNumber = '56975758832';
+
+		if (isMobile) {
+			link.href = 'https://wa.me/' + phoneNumber;
+		} else {
+			link.href = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
+		}
+	</script>
 </body>
 </html>
