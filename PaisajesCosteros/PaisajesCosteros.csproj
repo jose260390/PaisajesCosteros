@@ -192,6 +192,7 @@
     <Content Include="Content\css\site.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\Linearicons-Free.svg" />
+    <Content Include="Content\icono.ico" />
     <Content Include="Content\img\agradecimiento.jpg" />
     <Content Include="Content\img\Antofagasta\Antofa1.jpg" />
     <Content Include="Content\img\Antofagasta\Antofa10.jpg" />
@@ -235,7 +236,6 @@
     <Content Include="Content\img\GaleriaPrincipal\Taltal.jpg" />
     <Content Include="Content\img\GaleriaPrincipal\Tocopilla.jpg" />
     <Content Include="Content\img\logo.png" />
-    <Content Include="Content\img\meji1.jpg" />
     <Content Include="Content\img\Mejillones\Meji21.jpg" />
     <Content Include="Content\img\Mejillones\Meji22.jpg" />
     <Content Include="Content\img\Mejillones\Meji23.jpg" />
@@ -266,10 +266,7 @@
     <Content Include="Content\img\Mejillones\Meji8.jpg" />
     <Content Include="Content\img\Mejillones\Meji9.jpg" />
     <Content Include="Content\img\Mejillones\Meji20.jpg" />
-    <Content Include="Content\img\paposo.jpg" />
     <Content Include="Content\img\ruinas.jpg" />
-    <Content Include="Content\img\taltal1.jpg" />
-    <Content Include="Content\img\taltal2.jpg" />
     <Content Include="Content\img\Taltal\Tal1.jpg" />
     <Content Include="Content\img\Taltal\Tal10.jpg" />
     <Content Include="Content\img\Taltal\Tal11.jpg" />
@@ -544,6 +541,10 @@
     <Content Include="Content\pdf\RutaAntofagasta4.pdf" />
     <Content Include="Content\pdf\RutasTaltal.pdf" />
     <Content Include="Content\pdf\CaletaBuena.pdf" />
+    <Content Include="Content\pdf\PlanoCaletaBuena.pdf" />
+    <Content Include="Content\pdf\PlanoCaletaIndigena.pdf" />
+    <Content Include="Content\pdf\PlanoCaletaIndigena2.pdf" />
+    <Content Include="Content\pdf\PlanoCaletaIndigena3.pdf" />
     <None Include="Properties\PublishProfiles\paisajescosteros.cl - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
