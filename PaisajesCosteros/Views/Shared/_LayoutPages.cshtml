@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="~/Content/css/owl.carousel.css">
 	<link rel="stylesheet" href="~/Content/css/main.css">
 	<link rel="stylesheet" href="~/Content/css/Gallery.css">
+	<link rel="stylesheet" href="~/Content/css/principal.css">
 	<link rel="icon" type="image/x-icon" href="~/Content/icono.ico" />
 
 </head>
@@ -66,26 +67,27 @@
 				</div>
 			</nav>
 		</header>
-
 	</section>
-	<!-- End banner Area -->
 
 	@RenderBody()
 
-	<!-- start footer Area -->
-	<footer class="footer-area section-gap py-4">
+
+	<footer class="footer-area section-gap py-4 bg-dark text-white">
 		<div class="container">
 			<div class="row text-center align-items-center">
-				<!-- Columna 1: Copyright -->
-				<div class="col-lg-6 col-md-12 mb-3">
+				<div class="col-lg-3 col-md-6 mb-3">
+					<img src="../Content/img/logocaleta.png" alt="Logo 1" class="img-fluid footer-logo">
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-3">
 					<p class="footer-text mb-0">
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script><br>Todos los derechos reservados
+						<script>document.write(new Date().getFullYear());</script><br>
+						Todos los derechos reservados
 					</p>
 				</div>
 
-				<!-- Columna 2: Redes sociales -->
-				<div class="col-lg-6 col-md-12 mb-3">
+				<div class="col-lg-3 col-md-6 mb-3">
 					<h6>Síguenos</h6>
 					<p class="mb-2">Visita nuestras redes sociales</p>
 					<div class="footer-social d-flex justify-content-center gap-3">
@@ -93,12 +95,13 @@
 						<a target="_blank" href="https://www.instagram.com/paisajes_costeros/?utm_source=ig_web_button_share_sheet"><i class="fa fa-instagram"></i></a>
 					</div>
 				</div>
+
+				<div class="col-lg-3 col-md-6 mb-3">
+					<img src="../Content/img/logopaisajes.png" alt="Logo 2" class="img-fluid footer-logo">
+				</div>
 			</div>
 		</div>
 	</footer>
-
-
-	<!-- End footer Area -->
 
 	<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
 		<a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer">

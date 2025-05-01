@@ -238,7 +238,9 @@
     <Content Include="Content\img\GaleriaPrincipal\Tocopilla.jpg" />
     <Content Include="Content\img\imagenCostera.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logocaleta.png" />
     <Content Include="Content\img\logocorp.png" />
+    <Content Include="Content\img\logopaisajes.png" />
     <Content Include="Content\img\logosqm.png" />
     <Content Include="Content\img\Mejillones\Meji21.jpg" />
     <Content Include="Content\img\Mejillones\Meji22.jpg" />
