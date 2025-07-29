@@ -8,7 +8,7 @@ namespace PaisajesCosteros.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly paisammg_Entities _db = new paisammg_Entities();
+        private readonly ApplicationDbContext _db = new ApplicationDbContext();
 
         public ActionResult Index()
         {
@@ -26,7 +26,7 @@ namespace PaisajesCosteros.Controllers
                     return Json(new { success = false, message = "El nombre de la ciudad no puede estar vacío." }, JsonRequestBehavior.AllowGet);
                 }
 
-                var query = _db.Imagen.Where(l => l.imagen_nombre == nombreCiudad);
+                var query = _db.Imagenes.Where(l => l.Imagen_nombre == nombreCiudad);
                 int totalImagenes = query.Count();
 
                 if (totalImagenes == 0)
@@ -35,7 +35,7 @@ namespace PaisajesCosteros.Controllers
                 }
 
                 var listaImagen = query
-                                    .OrderBy(l => l.imagen_id)
+                                    .OrderBy(l => l.Imagen_id)
                                     .Skip((page - 1) * pageSize)
                                     .Take(pageSize)
                                     .ToList();
@@ -80,7 +80,7 @@ namespace PaisajesCosteros.Controllers
         {
             try
             {
-                return View(_db.PDF.ToList());
+                return View(_db.PDFs.ToList());
             }
             catch (Exception ex)
             {
@@ -95,11 +95,14 @@ namespace PaisajesCosteros.Controllers
         {
             try
             {
-                return View(_db.Video.ToList());
+                return View(_db.Videos.ToList());
             }
             catch (Exception ex)
             {
-                return View(_db.Imagen.ToList());
+                System.Diagnostics.Debug.WriteLine($"Error en la acción documentos: {ex.Message}");
+
+                ModelState.AddModelError("", "Ocurrió un error al obtener los videos. Inténtelo de nuevo más tarde.");
+                return View(new List<Video>());
             }
         }
     }
