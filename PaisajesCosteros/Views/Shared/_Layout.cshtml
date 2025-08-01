@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="~/Content/css/magnific-popup.css">
 	<link rel="stylesheet" href="~/Content/css/owl.carousel.css">
 	<link rel="stylesheet" href="~/Content/css/main.css">
-	<link rel="stylesheet" href="~/Content/css/principal.css?v=@DateTime.UtcNow.Ticks">
+	<link rel="stylesheet" href="~/Content/css/principal.css">
 	<link rel="icon" type="image/x-icon" href="~/Content/icono.ico" />
 
 </head>
@@ -35,7 +35,7 @@
 			<nav class="navbar navbar-expand-lg  navbar-light">
 				<div class="container">
 					<a class="navbar-brand" href="@Url.Action("Index", "Home")">
-						<img loading="lazy" src="~/Content/img/logo.png?v=@DateTime.UtcNow.Ticks" alt="">
+						<img loading="lazy" src="~/Content/img/logo.png" alt="">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="text-white lnr lnr-menu"></span>
@@ -99,11 +99,7 @@
 		</div>
 	</footer>
 
-	<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-		<a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-		</a>
-	</div>
+	@Html.Partial("_WhatsAppButton")
 
 
 	<script src="~/Content/js/vendor/jquery-2.2.4.min.js"></script>
@@ -120,17 +116,5 @@
 	<script src="~/Content/js/waypoints.min.js"></script>
 	<script src="~/Content/js/main.js"></script>
 
-
-	<script>
-		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		const link = document.getElementById('whatsapp-link');
-		const phoneNumber = '56975758832';
-
-		if (isMobile) {
-			link.href = 'https://wa.me/' + phoneNumber;
-		} else {
-			link.href = 'https://web.whatsapp.com/send?phone=' + phoneNumber;
-		}
-	</script>
 </body>
 </html>

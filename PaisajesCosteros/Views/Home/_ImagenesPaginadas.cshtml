@@ -10,7 +10,7 @@
 			<div class="col-md-6 mb-4 d-flex align-items-stretch @(isLastItem ? "last-image" : "")">
 				<div class="card">
 					<a href="@Url.Content(item.Imagen_ruta)" class="img-pop-up">
-						<img loading="lazy" src="@Url.Content(item.Imagen_ruta)?v=@DateTime.UtcNow.Ticks" alt="@item.Imagen_nombre" class="card-img-top img-hover">
+						<img loading="lazy" src="@Url.Content(item.Imagen_ruta)" alt="@item.Imagen_nombre" class="card-img-top img-hover">
 					</a>
 				</div>
 			</div>

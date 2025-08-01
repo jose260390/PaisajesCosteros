@@ -549,6 +549,7 @@
     <Content Include="Views\Shared\_LayoutPages.cshtml" />
     <Content Include="Views\Home\Imagen.cshtml" />
     <Content Include="Views\Home\_ImagenesPaginadas.cshtml" />
+    <Content Include="Views\Shared\_WhatsAppButton.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
